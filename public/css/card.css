@@ -1,18 +1,29 @@
 .cards{
     width: 100%;
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .card{
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    margin:50px;
+    justify-content: center;
+    margin:100px auto;
     color:white;
     height:150px;
     border-radius: 15px;
+}
+
+.card-container::after{
+    display: block;
+    content: "";
+    width: 20%;
+    border-bottom: 3px solid black;
+    height: 50px;
+    margin: auto;
+    opacity: 0.6;
+    float: none;
 }
 
 .card-image{
@@ -33,9 +44,10 @@
     font-weight: 800;
     display: block;
     text-align: center;
-    padding:30px 50px;
-    transition: padding 0.3s linear 0.1s;
+    margin-top: 100px;
+    transition: margin 0.3s linear 0.1s;
     color: black;
+    /* background-color: red; */
 }
 
 .card-content{

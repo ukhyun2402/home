@@ -1,13 +1,14 @@
 #slide-container{
     height: 600px;
+    margin-bottom: 100px;
 }
 
 #slide-container::after{
     display: block;
     content: "";
     width: 20%;
-    background-color: black;
-    height: 1px;
+    border-bottom: 3px solid black;
+    height: 50px;
     margin: auto;
     opacity: 0.6;
 }
@@ -20,7 +21,6 @@
   .swiper-slide {
     text-align: center;
     font-size: 18px;
-    background: #fff;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -35,6 +35,13 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
+
+
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+
+    color:white;
   }
   .swiper-content-right{
     width: 80%;
