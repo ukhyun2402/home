@@ -4,8 +4,18 @@
 <div id="slide-container">
 <div class="swiper-container">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Section 1 <br> Hello World</div>
-      <div class="swiper-slide">Section 2 <br> Hello World</div>
+      <div class="swiper-slide">
+        <div class="swiper-content-left">
+          <h1>Section1</h1>
+          <div>Hello World</div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="swiper-content-right">
+            <h1>Section1</h1>
+            <div>Hello World</div>
+          </div>
+      </div>
       <div class="swiper-slide">Section 3 <br> Hello World</div>
       <div class="swiper-slide">Section 4 <br> Hello World</div>
       <div class="swiper-slide">Section 5 <br> Hello World</div>
@@ -26,7 +36,7 @@
       spaceBetween: 0,
       centeredSlides: true,
       autoplay: {
-        delay: 3500,
+        delay: 99999999999,
         disableOnInteraction: false,
       },
       pagination: {

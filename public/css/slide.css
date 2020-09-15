@@ -36,3 +36,17 @@
     -webkit-align-items: center;
     align-items: center;
   }
+  .swiper-content-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: auto;
+  }
+  .swiper-content-left{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+  }

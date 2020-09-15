@@ -5,9 +5,10 @@
         </div>
         <div class="right">
             <a href="/">Home</a>
-            <a href="/About.php">About</a>
-            <a href="/Board.php">Board</a>
-            <a href="/Contact.php">Contact</a>
+            <a href="/about.php">About</a>
+            <a href="/board.php">Board</a>
+            <a href="/contact.php">Contact</a>
+            <a href="/admin.php">Admin</a>
         </div>        
     </nav>
 </header>
