@@ -38,15 +38,15 @@ body{
     border-radius: 50%;
     border: 5px solid #0f89e6;
     transition: all 0.1s;
+    box-shadow: 3px 5px #0d324d;
 }
 
 #user-float-button i{
     color: #0f89e6;
     font-size: 3em;
     transform: scale(1.1);
-
+    
     /* border-radius: 50%; */
-
 }
 
 #user-float-button:hover #user-form{
