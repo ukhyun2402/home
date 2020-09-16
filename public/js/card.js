@@ -11,11 +11,11 @@ function card_hover(element) {
         }
     }
     if (title != null) {
-        title.style.marginTop = "10px";
+        title.style.top = "10%";
     }
-    console.log(content);
     if (content != null) {
         content.style.opacity = "1";
+        content.style.bottom = "40%";
     }
 }
 
@@ -32,9 +32,17 @@ function card_mouse_out(element) {
         }
     }
     if (title != null) {
-        title.style.marginTop = "100px";
+        title.style.top = "30%";
     }
     if (content != null) {
         content.style.opacity = "0";
+        content.style.bottom = "30%";
     }
+}
+
+function card_load(){
+    var cards = document.getElementsByClassName('card');
+    window.addEventListener('scroll',function(e){
+        console.log(cards);
+    })        
 }

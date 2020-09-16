@@ -1,0 +1,17 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "210.114.6.140",
+            "port": 3306,
+            "driver": "MariaDB",
+            "name": "cafe24",
+            "database": "ukhyun2402",
+            "username": "ukhyun2402",
+            "password": "dnr68425"
+        }
+    ]
+}

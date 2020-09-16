@@ -10,7 +10,7 @@
 
 <body>
     <?php include $_SERVER['DOCUMENT_ROOT'] . "/public/components/header.php"; ?>
-
+    
 </body>
 
 </html>
