@@ -15,8 +15,7 @@
 <script>
     CKEDITOR.replace('editor', {
         filebrowserUploadUrl: "file.php",
-        // extraPlugins: 'easyimage',
-        removePlugins: 'image',
+        height: 9000,
     });
 </script>
 

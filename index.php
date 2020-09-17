@@ -73,7 +73,9 @@
     });
     </script>
     <!-- Board -->
-    
+
+    <!-- footer -->
+    <?php include $_SERVER['DOCUMENT_ROOT'] . "/public/components/footer.php"; ?>
 </body>
 
 </html>

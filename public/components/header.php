@@ -7,8 +7,8 @@
             <a href="/">Home</a>
             <a href="#">About</a>
             <a href="/board.php">Board</a>
-            <a href="/contact.php">Contact</a>
-            <a href="/admin.php">Admin</a>
+            <a href="#">Contact</a>
+            <a href="#">Admin</a>
         </div>
     </nav>
 </header>
