@@ -41,14 +41,14 @@
         }        
 
         public function load_data(){
-            $sql = "SELECT B.TITLE, B.WRITE_DATE, B.USER_ID,U.EMAIL FROM TMP_BOARD B LEFT JOIN USER U ON U.ID = B.USER_ID";
+            $sql = "SELECT B.TITLE, B.WRITE_DATE, U.EMAIL FROM TMP_BOARD B LEFT JOIN USER U ON U.ID = B.USER_ID";
             
             if($stmt = $this->mysql->prepare($sql)){
                 $stmt->execute();
                 $stmt->bind_result($title,$writeDate,$userEmail);
 
                 while($stmt->fetch()){
-                    printf("%s %s %s",$title,$writeDate,$userEmail);
+                    printf("<tr><td>%s</td><td>%s</td><td>%s</td></tr>",$title,$userEmail,$writeDate);
                 }
             }
             else{

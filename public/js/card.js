@@ -10,10 +10,10 @@ function card_hover(element) {
             content = listOfElement[i];
         }
     }
-    if (title != null) {
+    if (title) {
         title.style.top = "10%";
     }
-    if (content != null) {
+    if (content) {
         content.style.opacity = "1";
         content.style.bottom = "40%";
     }
@@ -31,10 +31,10 @@ function card_mouse_out(element) {
             content = listOfElement[i];
         }
     }
-    if (title != null) {
+    if (title) {
         title.style.top = "30%";
     }
-    if (content != null) {
+    if (content) {
         content.style.opacity = "0";
         content.style.bottom = "30%";
     }

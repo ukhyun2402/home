@@ -10,20 +10,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin:30px 50px;
+    margin: 0;
+    padding: 0;
     color:white;
     border-radius: 40px;
-    width: 25%;
+    width: 28%;
     height: 200px;
-    /* background-color: black; */
     opacity: 0;
-    margin-top: 30px;
+    margin: 30px 60px 30px;
     transition: all 0.2s;
     top: 30px;
+
+    /* background-color: blue; */
 }
 
 .card:hover{
-    scale: 1.5;
+    /* scale: 1.5; */
     box-shadow: 10px 10px #333333;
 }
 .card-container::after{
@@ -32,7 +34,7 @@
     width: 20%;
     border-bottom: 3px solid white;
     height: 50px;
-    margin: auto;
+    margin: 30px auto;
     opacity: 0.6;
     float: none;
 }
@@ -54,7 +56,7 @@
 
 .card-title{
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
 
     text-align: center;
@@ -71,8 +73,6 @@
     height: auto;
     position: absolute;
 
-    text-align: center;
-    vertical-align: middle;
     font-size: 13px;
     margin: auto;
 
@@ -81,5 +81,13 @@
     bottom: 30%;
     transform: translate(-50%,50%);
     transition: all 0.3s;
+
+    /* background-color: red; */
 }
 
+
+@media (max-width: 1050px){
+    .card{
+        width: 80%;
+    }
+}

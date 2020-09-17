@@ -38,9 +38,9 @@
 
 
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: center;
-
+    /* font-family: 'Noto Sans KR', sans-serif; */
     color:white;
   }
   .swiper-content-right{
