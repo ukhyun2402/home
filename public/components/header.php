@@ -37,11 +37,11 @@
         var navButton = document.querySelector('#nav-button');
 
         voidSection.style.display='block';
-        hideBar.style.display='block';
+        hideBar.style.right='0px';
 
         voidSection.addEventListener('click', function(e){
             voidSection.style.display='none';
-            hideBar.style.display='none';
+            hideBar.style.right='-100%';
         });
     }
 </script>

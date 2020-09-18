@@ -12,7 +12,7 @@ class Load_Board
         $this->limit = $list;
         $this->db_name = "ukhyun2402";
 
-        $this->mysql = new mysqli('localhost', 'ukhyun2402', 'dnr68425', 'ukhyun2402');
+        $this->mysql = new mysqli('210.114.6.140', 'ukhyun2402', 'dnr68425', 'ukhyun2402');
         if (mysqli_connect_errno()) {
             printf("Connect failed: %s\n", mysqli_connect_error());
             exit();

@@ -43,7 +43,7 @@ nav{
     position: fixed;
     background-color: black;
     opacity: 0.4;
-    width: 40%;
+    width: 100%;
     height: 100vh;
     left: 0;
     top: 0;
@@ -51,14 +51,15 @@ nav{
 }
 
 #hide-bar-content{
-    display: none;
+    /* display: none; */
     position: fixed;
     background-color: black;
     width: 60%;
     height: 100vh;
-    right: 0;
+    right: -100%;
     top: 0;
-    z-index: 100;
+    z-index: 101;
+    transition: all 0.2s;
 }
 
 #hide-bar-content{
@@ -89,7 +90,7 @@ nav{
 }
 
 #hide-bar-content li a::after{
-    content: "⮕";
+    content: "→";
     position: absolute;
     opacity: 0;
     transition: all 0.1s;
