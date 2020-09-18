@@ -13,10 +13,10 @@
     */
     $id = 1;
 
-    $db = new db();
+    $db = new mysqli('localhost','ukhyun2402','dnr68425','ukhyun2402');
     $sql = "INSERT INTO TMP_BOARD (USER_ID,TITLE,CONTENT) VALUES(?,?,?)";
 
-    $stmt = $db->conn->prepare($sql);
+    $stmt = $db->prepare($sql);
     $stmt->bind_param('dss',$id,$title,$editor);
 
     $stmt->execute();
