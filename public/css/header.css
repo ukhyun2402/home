@@ -29,9 +29,86 @@ nav{
     font-weight: bold;
 }
 
+#nav-button{
+    display: none;
+    padding: 5px 20px;
+}
+
+.nav-button i {
+    cursor: pointer;
+}
+
+#void{
+    display: none;
+    position: fixed;
+    background-color: black;
+    opacity: 0.4;
+    width: 40%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#hide-bar-content{
+    display: none;
+    position: fixed;
+    background-color: black;
+    width: 60%;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+
+#hide-bar-content{
+    color: white;
+    font-size: 1.2em;
+}
+
+#hide-bar-content h2::after{
+    content: '';
+    display: block;
+    background-color: white;
+    width: 100%;
+    height: 3px;
+}
+
+#hide-bar-content li {
+    list-style: none;
+    padding: 20px 20px;
+    margin: 5px 0 5px 20px;
+
+}
+
+#hide-bar-content li a{
+    position: relative;
+    color: white;
+    padding: 20px 20px;
+    margin: 5px 0 0 20px;
+}
+
+#hide-bar-content li a::after{
+    content: "⮕";
+    position: absolute;
+    opacity: 0;
+    transition: all 0.1s;
+    right: -20px;
+}
+
+#hide-bar-content li a:hover::after{
+    right: -50px;
+    opacity: 1;
+    font-size: 30px;
+    line-height: 30px;
+}
+
 
 @media (max-width : 650px){
     header .right{
         display: none;
+    }
+    #nav-button{
+        display: inline-block;
     }
 }

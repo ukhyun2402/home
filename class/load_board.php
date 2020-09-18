@@ -41,9 +41,9 @@ class Load_Board
         }
     }
 
-    public function load_data()
+    public function load_list(string $table_name)
     {
-        $sql = "SELECT B.ID, B.TITLE, B.WRITE_DATE, U.EMAIL FROM TMP_BOARD B LEFT JOIN USER U ON U.ID = B.USER_ID";
+        $sql = "SELECT B.ID, B.TITLE, B.WRITE_DATE, U.EMAIL FROM $table_name B LEFT JOIN USER U ON U.ID = B.USER_ID ORDER BY B.WRITE_DATE DESC";
 
         if ($stmt = $this->mysql->prepare($sql)) {
             $stmt->execute();
@@ -57,6 +57,41 @@ class Load_Board
                         </tr>", $id, $title, $userEmail, explode(' ', $writeDate)[0]);
             }
         } else {
+            printf(mysqli_error($this->mysql));
+        }
+    }
+
+    public function load_data(int $board_id){
+        $sql = "SELECT B.TITLE, B.CONTENT, B.WRITE_DATE, U.EMAIL FROM $this->table_name B LEFT JOIN USER U ON U.ID = B.USER_ID WHERE B.ID = ?";
+        
+        if($stmt = $this->mysql->prepare($sql)){
+            $stmt->bind_param("d", $board_id);
+            $stmt->execute();
+            $stmt->bind_result($title, $content, $writeDate,$writer);
+
+            while($stmt->fetch()) {
+                printf(
+                    "
+                    <div id='view-container'>
+                        <div id='view-header'>
+                            <div id='title'>
+                                %s
+                            </div>
+                            <div>
+                                %s
+                            </div>
+                        </div>
+                        <div id='content-container'>
+                            <div id='content'>
+                                %s
+                            </div>
+                        </div>
+                    </div>
+                    "
+                ,$title, $writer, htmlspecialchars_decode($content));
+            }
+        }
+        else {
             printf(mysqli_error($this->mysql));
         }
     }
