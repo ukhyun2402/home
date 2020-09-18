@@ -15,7 +15,6 @@
     padding: 30px 30px 10px 30px;
     flex-wrap: wrap;
 }
-
 #view-header::after{
     content: '';
     display: block;
@@ -33,6 +32,7 @@
 
 #title{
     font-size: 40px;
+    word-break: break-all;
 }
 
 #content-container{
